@@ -7,28 +7,20 @@ use yii\db\Migration;
  */
 class m210804_194734_user_info_table extends Migration
 {
-    /**
-     * {@inheritdoc}
-     */
-    public function safeUp()
-    {
 
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function safeDown()
-    {
-        echo "m210804_194734_user_info_table cannot be reverted.\n";
-
-        return false;
-    }
-
-    /*
-    // Use up()/down() to run migration code without a transaction.
     public function up()
     {
+        $this->createTable('user_info', [
+            'id' => $this->primaryKey(),
+            'last_name' => $this->string(),
+            'name' => $this->string()->notNull(),
+            'patronymic' => $this->string(),
+            'birthday'=>$this->date(),
+            'date_create'=>$this->date(),
+            'date_update'=>$this->date(),
+            'photo'=>$this->string(),
+            'userId' => $this->integer(11)->notNull()
+            ]);
 
     }
 
@@ -38,5 +30,4 @@ class m210804_194734_user_info_table extends Migration
 
         return false;
     }
-    */
 }
