@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Class m210805_081345_add_fk
  */
-class m210805_081345_add_fk extends Migration
+class m210805_201345_add_fk extends Migration
 {
 
     // Use up()/down() to run migration code without a transaction.
