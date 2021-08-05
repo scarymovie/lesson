@@ -11,7 +11,7 @@ class m210805_212510_add_post_table extends Migration
     // Use up()/down() to run migration code without a transaction.
     public function up()
     {
-        $this->createTable('user_info', [
+        $this->createTable('posts', [
             'id' => $this->primaryKey(),
             'photo' => $this->string(),
             'description' => $this->string(),
