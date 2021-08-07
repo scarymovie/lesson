@@ -16,5 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
-
+    <p>
+        <?= Html::a('Create Tags', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>
 </div>
