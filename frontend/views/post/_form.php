@@ -1,10 +1,13 @@
 <?php
 
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use common\models\Tags;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Posts */
+/* @var $model common\models\Tags */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -17,6 +20,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'photo')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'userId')->textInput() ?>
+
 
     <?= $form->field($model, 'tagId')->textInput() ?>
 

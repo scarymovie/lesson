@@ -28,7 +28,7 @@ class Tags extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name'],'unique','required', 'string', 'max' => 255],
+            [['name'], 'string', 'max' => 255],
         ];
     }
 
@@ -41,6 +41,12 @@ class Tags extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
         ];
+    }
+
+    public function getName()
+    {
+        return self::find()->all();
+
     }
 
     /**
